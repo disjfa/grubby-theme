@@ -1,0 +1,39 @@
+<div class="d-block w-100">
+    <h3>
+        Mail Service
+    </h3>
+    <div class="message-list d-block">
+        <a href="{{ '/inbox/index.html' | prepend: site.baseurl }}" class="message-list-item{% if page.url == '/inbox/index.html' %} active{% endif %}">
+            <i class="fa fa-fw fa-envelope"></i>
+            Inbox
+            <span class="float-right"><span class="badge badge-primary">6</span></span>
+        </a>
+        <a href="#" class="message-list-item">
+            <i class="fa fa-fw fa-paper-plane"></i>
+            Sent Mail
+        </a>
+        <a href="#" class="message-list-item">
+            <i class="fa fa-fw fa-sad-cry"></i>
+            Important
+        </a>
+        <a href="#" class="message-list-item">
+            <i class="fa fa-fw fa-star"></i>
+            Starred
+        </a>
+        <a href="#" class="message-list-item">
+            <i class="fa fa-fw fa-file"></i>
+            Drafts
+        </a>
+        <a href="#" class="message-list-item">
+            <i class="fa fa-fw fa-tag"></i>
+            Tags
+        </a>
+        <a href="#" class="message-list-item">
+            <i class="fa fa-fw fa-trash"></i>
+            Trash
+        </a>
+    </div>
+    <div class="mt-3">
+        <a href="{{ '/inbox/compose.html' | prepend: site.baseurl }}" class="btn btn-primary btn-block">Compose new Email</a>
+    </div>
+</div>
