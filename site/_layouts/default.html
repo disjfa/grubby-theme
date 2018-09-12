@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+<div class="grid">
+    <div class="grid-sidebar bg-white">
+        <nav class="navbar navbar-light bg-white d-none d-md-block border-bottom">
+            <div class="navbar-brand px-2">
+                <i class="fa fa-bars"></i>
+                Menu
+            </div>
+        </nav>
+        {% include sidebar.html %}
+    </div>
+    <div class="grid-header">
+        <nav class="navbar navbar-light bg-white border-bottom">
+            <a class="navbar-brand d-none d-md-block" href="{{ '/' | prepend: site.baseurl }}">
+                <i class="fa fa-compass"></i>
+                {{ site.title }}
+            </a>
+            <div></div>
+            <div class="d-flex">
+                <div class="position-relative">
+                    <a class="nav-link text-dark" href="#" id="navbar-unread" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-bell"></i>
+                        <span class="nav-unread"></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbar-unread">
+                        <a class="dropdown-item" href="#">
+                            <div>Lorem ipsum dolor sit amet.</div>
+                            <small class="text-secondary">consectetur adipisicing elit</small>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <div>Lorem ipsum dolor sit amet.</div>
+                            <small class="text-secondary">consectetur adipisicing elit</small>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-center" href="#">Mark all as read</a>
+                    </div>
+                </div>
+                <div class="position-relative">
+                    <a class="nav-link d-flex py-1" href="#" id="navbar-profile" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img style="max-height: 32px;" class="img-rounded" src="https://images.unsplash.com/photo-1519362909365-f8591adb630e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=45d999288851ed72dbee2550524a7a70&auto=format&fit=crop&w=80&h=80&q=80">
+                        <div class="ml-2" style="line-height: 1">
+                            <div class="text-dark">Jane Pearson</div>
+                            <small class="text-muted">Administrator</small>
+                        </div>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbar-profile">
+                        <a class="dropdown-item" href="{{ '/profile.html' | prepend: site.baseurl }}">
+                            <i class="fa fa-user"></i> Profile
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-cog"></i> Settings
+                        </a>
+                        <a class="dropdown-item" href="{{ '/inbox/index.html' | prepend: site.baseurl }}">
+                            <span class="float-right"><span class="badge badge-primary">6</span></span>
+                            <i class="fa fa-envelope"></i> Inbox
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-paper-plane"></i> Message
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-question-circle"></i> Need help?
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fa fa-sign-out-alt"></i> Sign out
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="grid-content">
+        {{ content }}
+    </div>
+    <div class="grid-footer bg-white">
+        <div class="py-2 px-2">
+            {% include edit.html %}
+        </div>
+    </div>
+</div>
+{% include footer.html %}
+</body>
+</html>

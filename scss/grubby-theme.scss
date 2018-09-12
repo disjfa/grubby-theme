@@ -1,0 +1,21 @@
+@import 'variables';
+@import '~bootstrap/scss/bootstrap';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~hella-hero/scss/index';
+@import '~ryoko-headers/scss/ryoko';
+@import 'grid';
+@import 'message-list';
+@import 'sidebar';
+
+.nav-unread {
+  width: .5rem;
+  height: .5rem;
+  background: $danger;
+  position: absolute;
+  right: .5rem;
+  top: .5rem;
+  border-radius: 50%;
+}

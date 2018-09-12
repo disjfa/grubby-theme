@@ -1,0 +1,6 @@
+{% if page.path %}
+    <a href="{{ page.path | prepend: site.github_base | prepend: site.github_url }}" class="btn btn-outline-primary">
+        <i class="fab fa-github"></i>
+        edit on github
+    </a>
+{% endif %}

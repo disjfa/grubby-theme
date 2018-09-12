@@ -1,0 +1,15 @@
+<div class="sticky-top">
+    <nav class="navbar navbar-dark navbar-expand-lg d-block bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="{{ '/' | prepend: site.baseurl }}">{{ site.title }}</a>
+            <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#sidebar-navigation" aria-controls="sidebar-navigation" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse py-2" id="sidebar-navigation">
+                <ul class="navbar-nav" id="menu-main">
+                    {% include navbar-menu.html group='main' %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>

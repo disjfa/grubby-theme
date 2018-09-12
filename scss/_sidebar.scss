@@ -1,0 +1,12 @@
+.sidebar-with-icon {
+  .sidebar-icon {
+    transform: rotate(-90deg);
+    transition: transform .3s;
+    padding-top: $nav-link-padding-y/2;
+  }
+  > .collapsed {
+    > .sidebar-icon {
+      transform: rotate(0);
+    }
+  }
+}

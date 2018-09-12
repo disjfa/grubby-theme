@@ -1,0 +1,19 @@
+.message-list {
+  display: block;
+  &-item {
+    display: block;
+    color: $gray-600;
+    padding: $spacer/2;
+
+    &:active,
+    &:hover {
+      text-decoration: none;
+      color: $gray-700;
+      background: rgba($gray-600, .1);
+    }
+
+    &.active {
+      background: rgba($gray-600, .2);
+    }
+  }
+}

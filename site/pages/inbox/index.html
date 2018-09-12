@@ -1,0 +1,72 @@
+---
+layout: default
+title: Inbox
+permalink: /inbox/index.html
+group: main
+icon: fa-envelope
+order: 6
+---
+<div class="d-lg-none col-12 bg-primary text-xs-right">
+    <div class="container">
+        <a href="#inbox-menu" data-toggle="collapse" class="btn btn-default bg-primary text-white">
+            <i class="fa fa-life-ring"></i>
+            Show menu
+        </a>
+    </div>
+</div>
+<div class="container">
+    <div class="navbar-expand-lg">
+
+
+        <div class="row">
+            <div class="col-lg-4 col-12 collapse navbar-collapse py-3 align-items-lg-start" id="inbox-menu">
+                {% include_relative inbox_menu.html %}
+            </div>
+            <div class="col-lg-8 col-12 py-3">
+                <h3>
+                    Inbox
+                </h3>
+                <div class="table-responsive">
+                    <table class="table border bg-white">
+                        <thead>
+                        <tr>
+                            <th></th>
+                            <th>From</th>
+                            <th>Subject</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for data in site.data.inbox %}
+                            <tr{% if data.unread %} class="font-weight-bold"{% endif %}>
+                                <td>
+                                    <a href="#"><i class="{% if data.starred %}fa{% else %}far{% endif %} fa-star"></i></a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        {{ data.name }}
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        {{ data.subject | truncate: 50 }}
+                                    </a>
+                                </td>
+                                <td>
+                                    {% if data.attachment %}
+                                        <i class="fa fa-paperclip"></i>
+                                    {% endif %}
+                                </td>
+                                <td>
+                                    {{ data.date }}
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

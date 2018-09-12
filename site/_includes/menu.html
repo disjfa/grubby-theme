@@ -1,0 +1,35 @@
+{% assign sorted_pages = site.pages | sort : "order" %}
+{% for my_page in sorted_pages %}
+    {% if my_page.title %}
+        {% if my_page.group == include.group %}
+            {% if my_page.menu %}
+                {% assign my_submenu = false %}
+                {% if page.url contains my_page.url %}
+                    {% assign my_submenu = true %}
+                {% endif %}
+                {% if my_page.menu == page.group %}
+                    {% assign my_submenu = true %}
+                {% endif %}
+                <li class="sidebar-with-icon nav-item{% if my_submenu %} active{% endif %}">
+                    <a class="nav-link{% if my_submenu == false %} collapsed{% endif %}" href="#menu-{{ my_page.menu }}" data-toggle="collapse">
+                        <i class="fa fa-fw fa-chevron-left float-right sidebar-icon"></i>
+                        <i class="fa fa-fw {{ my_page.icon }}"></i>
+                        {{ my_page.title }}
+                    </a>
+                    <div class="collapse {% if my_submenu %} show{% endif %}" id="menu-{{ my_page.menu }}" data-parent="#menu-{{ include.group }}">
+                        <ul class="navbar-nav d-block pl-1 ml-2 border-left">
+                            {% include menu.html group=my_page.menu %}
+                        </ul>
+                    </div>
+                </li>
+            {% else %}
+                <li class="nav-item{% if my_page.url == page.url %} active{% endif %}">
+                    <a class="nav-link" href="{{ my_page.url | prepend: site.baseurl }}">
+                        <i class="fa fa-fw {{ my_page.icon }}"></i>
+                        {{ my_page.title }}
+                    </a>
+                </li>
+            {% endif %}
+        {% endif %}
+    {% endif %}
+{% endfor %}

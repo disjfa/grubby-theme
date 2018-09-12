@@ -1,0 +1,46 @@
+---
+layout: page
+title: Login
+permalink: /login.html
+group: main
+icon: fa-sign-in-alt
+order: 20
+---
+
+<div class="py-3">
+    <h1 class="text-center py-3">{{ site.title }}</h1>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <form action="{{ '/' | prepend : site.baseurl }}" method="get">
+                    <div class="card bg-faded">
+                        <div class="card-header bg-primary text-white">
+                            <i class="fa fa-user"></i>
+                            Login
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="text" class="form-control" id="email" placeholder="Email..." autofocus>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Password...">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary pull-left">
+                                <i class="fa fa-sign-in"></i>
+                                Login
+                            </button>
+                            <button type="submit" class="btn btn-info pull-right">
+                                <i class="fa fa-lock"></i>
+                                Lost password
+                            </button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

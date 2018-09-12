@@ -1,0 +1,69 @@
+-   name: Saunders Andrea
+    subject: Proin risus. Praesent lectus. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.
+    date: 2.8.2018
+    starred: true
+    attachment: false
+    unread: true
+
+-   name: Prince Vassbender
+    subject: In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti.
+    date: 2.8.2018
+    starred: false
+    attachment: true
+    unread: true
+
+-   name: Grange Relton
+    subject: Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim.
+    date: 2.8.2018
+    starred: false
+    attachment: false
+    unread: false
+
+-   name: Val Christofe
+    subject: Pellentesque ultrices mattis odio. Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus. Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam. Nam tristique tortor eu pede.
+    date: 2.8.2018
+    starred: true
+    attachment: false
+    unread: true
+
+-   name: Danica Kirkland
+    subject: Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui.
+    date: 2.8.2018
+    starred: false
+    attachment: false
+    unread: false
+
+-   name: Fabio McEntegart
+    subject: In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.
+    date: 2.8.2018
+    starred: false
+    attachment: false
+    unread: false
+
+-   name: Tallia De Vries
+    subject: Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis.
+    date: 2.8.2018
+    starred: false
+    attachment: true
+    unread: false
+
+-   name: Vinita MacGaughey
+    subject: Nulla mollis molestie lorem. Quisque ut erat.
+    date: 2.8.2018
+    starred: false
+    attachment: false
+    unread: false
+
+-   name: Giorgio Ugoletti
+    subject: Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui.
+    date: 2.8.2018
+    starred: false
+    attachment: false
+    unread: false
+
+-   name: Dyanne Glennard
+    subject: Nulla nisl.
+    date: 2.8.2018
+    starred: false
+    attachment: false
+    unread: false
