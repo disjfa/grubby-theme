@@ -10,6 +10,7 @@ icon: fa-file-alt
     <div class="row">
         <div class="col-lg-6">
             <h3>Default forms</h3>
+
             <form action="#">
                 {% for data in site.data.formdata %}
                     <div class="form-group">
@@ -40,6 +41,31 @@ icon: fa-file-alt
                                     </div>
                                 </div>
                             {% endfor %}
+                            {% elsif data.type == "switch-checkbox" %}
+                            {% for option in data.options %}
+                                <label class="switch" for="default-{{ data.id }}-{{ option }}">
+                                    <div class="switch-item" role="switch">
+                                        <input type="checkbox" class="custom-control-input" id="default-{{ data.id }}-{{ option }}" name="default-{{ data.id }}-{{ option }}">
+                                        <span class="switch-slider"></span>
+                                    </div>
+                                    <div class="switch-label">
+                                        {{ option }}
+                                    </div>
+                                </label>
+                            {% endfor %}
+                            {% elsif data.type == "switch-radio" %}
+                            {% for option in data.options %}
+                                <label class="switch" for="default-{{ data.id }}-{{ option }}">
+                                    <div class="switch-item" role="switch">
+                                        <input type="radio" class="custom-control-input" id="default-{{ data.id }}-{{ option }}" name="default-{{ data.id }}">
+                                        <span class="switch-slider round"></span>
+                                    </div>
+                                    <div class="switch-label">
+                                        {{ option }}
+                                    </div>
+                                </label>
+                            {% endfor %}
+
                             {% elsif  data.type == "textarea" %}
                             <textarea name="default-{{ data.id }}" id="default-{{ data.id }}" class="form-control" required></textarea>
                         {% else %}
@@ -87,7 +113,32 @@ icon: fa-file-alt
                                             <label class="custom-control-label" for="inline-{{ data.id }}-{{ option }}">{{ option }}</label>
                                         </div>
                                     </div>
-                                {% endfor %}    {% elsif  data.type == "textarea" %}
+                                {% endfor %}
+                                {% elsif data.type == "switch-checkbox" %}
+                                {% for option in data.options %}
+                                    <label class="switch" for="inline-{{ data.id }}-{{ option }}">
+                                        <div class="switch-item" role="switch">
+                                            <input type="checkbox" class="custom-control-input" id="inline-{{ data.id }}-{{ option }}" name="inline-{{ data.id }}-{{ option }}">
+                                            <span class="switch-slider"></span>
+                                        </div>
+                                        <div class="switch-label">
+                                            {{ option }}
+                                        </div>
+                                    </label>
+                                {% endfor %}
+                                {% elsif data.type == "switch-radio" %}
+                                {% for option in data.options %}
+                                    <label class="switch" for="inline-{{ data.id }}-{{ option }}">
+                                        <div class="switch-item" role="switch">
+                                            <input type="radio" class="custom-control-input" id="inline-{{ data.id }}-{{ option }}" name="inline-{{ data.id }}">
+                                            <span class="switch-slider round"></span>
+                                        </div>
+                                        <div class="switch-label">
+                                            {{ option }}
+                                        </div>
+                                    </label>
+                                {% endfor %}
+                                {% elsif  data.type == "textarea" %}
                                 <textarea name="inline-{{ data.id }}" id="inline-{{ data.id }}" class="form-control" required></textarea>
                             {% else %}
                                 <input type="{{ data.type }}" id="inline-{{ data.id }}" class="form-control" required>

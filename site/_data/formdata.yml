@@ -38,6 +38,22 @@
     - two
     - three
 
+-   name: Switch checkbox
+    id: switch-checkbox
+    type: switch-checkbox
+    options:
+    - one
+    - two
+    - three
+
+-   name: Switch radio
+    id: switch-radio
+    type: switch-radio
+    options:
+    - one
+    - two
+    - three
+
 -   name: Example textarea
     id: example-textarea
     type: textarea

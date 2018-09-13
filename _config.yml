@@ -4,7 +4,7 @@ name: Disjfa valours
 email: disjfa@disjfa.com
 description: >
   A simple theme, responsive and beautiful. For useage on your own product.
-  I has a lot of example use cases you can implement on your own website.
+  It has a lot of example use cases you can implement on your own website.
 baseurl: "/grubby-theme"
 url: "https://disjfa.github.io"
 github_url:  https://github.com/disjfa/grubby-theme

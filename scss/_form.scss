@@ -1,0 +1,72 @@
+$switch-width: 40px;
+$switch-height: 20px;
+$switch-padding: 4px;
+$switch-transition: .3s;
+$switch-background: #ccc;
+$switch-color: #2980b9;
+
+/* The switch - the box around the slider */
+.switch {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &-label {
+    flex: 1;
+    padding-left: $switch-padding;
+  }
+
+  &-item {
+    position: relative;
+    display: inline-block;
+    width: $switch-width;
+    height: $switch-height;
+  }
+
+  input {
+    display: none;
+    &:checked + .switch-slider {
+      background-color: $switch-color;
+    }
+
+    &:checked + .switch-slider:before {
+      transform: translateX($switch-width - $switch-height);
+    }
+
+    &:focus + .switch-slider {
+      box-shadow: 0 0 1px $switch-color;
+    }
+  }
+  &:hover .switch-slider {
+    box-shadow: 0 0 1px $switch-color;
+  }
+
+  &-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $switch-background;
+    transition: $switch-transition;
+    &:before {
+      position: absolute;
+      content: "";
+      height: $switch-height - $switch-padding - $switch-padding;
+      width: $switch-height - $switch-padding - $switch-padding;
+      left: $switch-padding;
+      bottom: $switch-padding;
+      background-color: white;
+      transition: $switch-transition;
+    }
+
+    &.round {
+      border-radius: $switch-height;
+    }
+
+    &.round:before {
+      border-radius: 50%;
+    }
+  }
+}
