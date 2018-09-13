@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Profile</title>
+    <title>Dashboard</title>
     <meta name="description" content="A simple theme, responsive and beautiful. For useage on your own product. It has a lot of example use cases you can implement on your own website.
 ">
 
@@ -47,7 +47,7 @@
 
     <link rel="stylesheet" href="/grubby-theme/build/grubby-theme.css">
     <link rel="stylesheet" href="/grubby-theme/css/highlight.css">
-    <link rel="canonical" href="https://disjfa.github.io/grubby-theme/profile.html">
+    <link rel="canonical" href="https://disjfa.github.io/grubby-theme/dashboard.html">
     <link rel="alternate" type="application/rss+xml" title="Grubby theme" href="https://disjfa.github.io/grubby-theme/feed.xml">
 </head>
 
@@ -255,13 +255,13 @@
                 
                 
                 
-                <li class="sidebar-with-icon nav-item">
-                    <a class="nav-link collapsed" href="#menu-admin" data-toggle="collapse">
+                <li class="sidebar-with-icon nav-item active">
+                    <a class="nav-link" href="#menu-admin" data-toggle="collapse">
                         <i class="fa fa-fw fa-chevron-left float-right sidebar-icon"></i>
                         <i class="fa fa-fw fa-compass"></i>
                         Admin
                     </a>
-                    <div class="collapse " id="menu-admin" data-parent="#menu-main">
+                    <div class="collapse  show" id="menu-admin" data-parent="#menu-main">
                         <ul class="navbar-nav d-block pl-1 ml-2 border-left">
                             
 
@@ -294,7 +294,7 @@
     
         
             
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="/grubby-theme/dashboard.html">
                         <i class="fa fa-fw fa-tachometer-alt"></i>
                         Dashboard
@@ -584,53 +584,79 @@
         </nav>
     </div>
     <div class="grid-content">
-        <div class="bg-success text-white">
-    <div class="container">
-        <div class="row  py-3">
-            <div class="col-sm-2 col-12">
-                <img src="/grubby-theme/assets/profile.jpg" alt="Profile image"
-                     class="rounded img-fluid">
-            </div>
-            <div class="col-sm-10 col-12">
-                <h4>
-                    <div>Disjfa valours</div>
-                    <small class="text-white">My user subtitle</small>
-                </h4>
-                <div class="btn-group py-2">
-                    <a href="https://facebook.com/" class="btn btn-outline-light">
-                        <i class="fab fa-fw fa-facebook"></i>
-                    </a>
-                    <a href="https://www.twitch.tv/" class="btn btn-outline-light">
-                        <i class="fab fa-fw fa-google"></i>
-                    </a>
-                    <a href="https://twitter.com/" class="btn btn-outline-light">
-                        <i class="fab fa-fw fa-twitter"></i>
-                    </a>
-                    <a href="https://github.com/disjfa/grubby-theme" class="btn btn-outline-light">
-                        <i class="fab fa-fw fa-github"></i>
-                    </a>
+        <div class="bg-primary text-white">
+    <div class="container py-3">
+        <h1>Dashboard</h1>
+        <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequuntur distinctio ea id iste modi
+            neque sit temporibus, vero. Dicta dolor enim ipsum, nam ratione recusandae totam vel veritatis. Eveniet.
+        </p>
+    </div>
+</div>
+<div class="container py-3">
+    <div class="row">
+        <div class="col-12">
+            <div class="card ">
+                <h3 class="card-header">Added some charts</h3>
+                <div class="card-body">
+                    <canvas id="chart-1"></canvas>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="container py-3">
-    <p class="lead">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur consequatur cumque dolores, et
-        eum facilis in ipsum iure libero perspiciatis quae quidem sapiente sint ullam unde voluptate voluptatem.
-    </p>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores beatae blanditiis cumque doloribus
-        enim eos et eveniet excepturi harum nostrum officia, omnis pariatur provident quae reiciendis reprehenderit
-        saepe sequi?
-    </p>
+    <div class="row">
+        <div class="col-12">
+            <br>
+            <h3>Blocks</h3>
+        </div>
+        <div class="col-lg-6 col-12 py-2">
+            <div class="card text-white bg-primary text-xs-center">
+                <div class="card-body">
+                    <blockquote class="card-blockquote">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-12 py-2">
+            <div class="card text-white bg-info text-xs-center">
+                <div class="card-body">
+                    <blockquote class="card-blockquote">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-12 py-2">
+            <div class="card text-white bg-warning text-xs-center">
+                <div class="card-body">
+                    <blockquote class="card-blockquote">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-12 py-2">
+            <div class="card text-white bg-success text-xs-center">
+                <div class="card-body">
+                    <blockquote class="card-blockquote">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                        <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
     </div>
     <div class="grid-footer bg-white">
         <div class="py-2 px-2">
             
-    <a href="https://github.com/disjfa/grubby-theme/tree/master/site/pages/profile.html" class="btn btn-outline-primary">
+    <a href="https://github.com/disjfa/grubby-theme/tree/master/site/pages/dashboard.html" class="btn btn-outline-primary">
         <i class="fab fa-github"></i>
         edit on github
     </a>

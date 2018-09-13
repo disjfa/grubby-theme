@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "name": "Grubby theme",
+  "description": "A simple theme, responsive and beautiful.",
+  "icons": {
+    "60": "/grubby-theme/icons/firefox_app_60x60.png",
+    "128": "/grubby-theme/icons/firefox_app_128x128.png",
+    "512": "/grubby-theme/icons/firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": "disjfa",
+    "url": "http://disjfa.nl/"
+  }
+}

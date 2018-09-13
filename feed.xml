@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Grubby theme</title>
-    <description>A simple theme, responsive and beautiful. For useage on your own product. I has a lot of example use cases you can implement on your own website.
+    <description>A simple theme, responsive and beautiful. For useage on your own product. It has a lot of example use cases you can implement on your own website.
 </description>
-    <link>http://0.0.0.0:5000/grubby-theme/</link>
-    <atom:link href="http://0.0.0.0:5000/grubby-theme/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 12 Sep 2018 21:49:41 +0000</pubDate>
-    <lastBuildDate>Wed, 12 Sep 2018 21:49:41 +0000</lastBuildDate>
+    <link>https://disjfa.github.io/grubby-theme/</link>
+    <atom:link href="https://disjfa.github.io/grubby-theme/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 13 Sep 2018 22:10:23 +0000</pubDate>
+    <lastBuildDate>Thu, 13 Sep 2018 22:10:23 +0000</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
   </channel>

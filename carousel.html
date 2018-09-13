@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Home</title>
+    <title>Carousel</title>
     <meta name="description" content="A simple theme, responsive and beautiful. For useage on your own product. It has a lot of example use cases you can implement on your own website.
 ">
 
@@ -47,7 +47,7 @@
 
     <link rel="stylesheet" href="/grubby-theme/build/grubby-theme.css">
     <link rel="stylesheet" href="/grubby-theme/css/highlight.css">
-    <link rel="canonical" href="https://disjfa.github.io/grubby-theme/">
+    <link rel="canonical" href="https://disjfa.github.io/grubby-theme/carousel.html">
     <link rel="alternate" type="application/rss+xml" title="Grubby theme" href="https://disjfa.github.io/grubby-theme/feed.xml">
 </head>
 
@@ -96,7 +96,7 @@
     
         
             
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="/grubby-theme/index.html">
                         <i class="fa fa-fw fa-home"></i>
                         Home
@@ -120,7 +120,7 @@
                 
                 
                 
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown active">
                     <a class="nav-link dropdown-toggle" href="#menu-pages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="fa fa-fw fa-file"></i>
                         Pages
@@ -152,7 +152,7 @@
 
     
         
-            <a class="dropdown-item" href="/grubby-theme/carousel.html">
+            <a class="dropdown-item active" href="/grubby-theme/carousel.html">
                 <i class="fa fa-fw fa-images"></i>
                 Carousel
             </a>
@@ -469,11 +469,11 @@
     </nav>
 </div>
 
-<div class="ryoko" style="background-image: url(https://images.unsplash.com/photo-1536712561567-464195c056ca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c6aff458ede991b57d36fb5d31d04b1f&auto=format&fit=crop&w=1200&h=800&q=80)">
+<div class="ryoko" style="background-image: url(https://images.unsplash.com/photo-1533856493584-0c6ca8ca9ce3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c6aff458ede991b57d36fb5d31d04b1f&auto=format&fit=crop&w=1200&h=800&q=80)">
     <div class="ryoko-shade ryoko-body">
         <div class="ryoko-faded ryoko-shadow text-white px-3 py-3 my-3">
-            <h1>Grubby theme</h1>
-            <p>A simple theme, responsive and beautiful.</p>
+            <h1>Carousel</h1>
+            <p>A simple carousel.</p>
         </div>
     </div>
 </div>
@@ -491,77 +491,38 @@
     </p>
 </div>
 
-<div class="container py-3">
-    <div class="row py-3">
-        <div class="col-md-4 text-center">
-            <div class="fa fa-fw fa-5x fa-box-open"></div>
-            <p>
-                Accusantium aspernatur atque consectetur consequatur dicta excepturi.
-            </p>
-        </div>
-        <div class="col-md-4 text-center">
-            <div class="fa fa-fw fa-5x fa-bicycle"></div>
-            <p>
-                Doloremque eius eligendi eveniet, expedita fuga harum ipsam iure laboriosam.
-            </p>
-        </div>
-        <div class="col-md-4 text-center">
-            <div class="fa fa-fw fa-5x fa-archive"></div>
-            <p>
-                Atque consequuntur doloribus illo iure natus placeat porro quasi quibusdam.
-            </p>
-        </div>
-    </div>
-</div>
-<div class="bg-white">
+
+<div class="bg-primary">
     <div class="container py-3">
-        <div class="text-center p-3">
-            <h3>Accusantium at atque autem consectetur eaque.</h3>
-            <p class="lead">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem corporis eos et expedita fugiat!
-                Accusamus accusantium consectetur ducimus, et excepturi fugiat fugit id necessitatibus nulla, officia
-                officiis, sapiente soluta veniam.
-            </p>
+        <div id="carousel-home" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-home" data-slide-to="1"></li>
+                <li data-target="#carousel-home" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://images.unsplash.com/photo-1533738699159-d0c68059bb61?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c6aff458ede991b57d36fb5d31d04b1f&auto=format&fit=crop&w=1200&h=675&q=80" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://images.unsplash.com/photo-1516978101789-720eacb59e79?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c6aff458ede991b57d36fb5d31d04b1f&auto=format&fit=crop&w=1200&h=675&q=80" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://images.unsplash.com/photo-1511275539165-cc46b1ee89bf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c6aff458ede991b57d36fb5d31d04b1f&auto=format&fit=crop&w=1200&h=675&q=80" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-home" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-home" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
     </div>
 </div>
-<div class="container py-3">
-    <form action="#">
-        <div class="hella-row">
-            <label for="item-for-use-1" class="hella-item js-hella-item-input hella-row__col">
-                <div class="hella-item__heading" style="background-image: url(https://images.unsplash.com/photo-1536733203354-a125031aa773?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cb6bbd20917a2dc48886c2e4a5634892&auto=format&fit=crop&w=800&q=80)">
 
-                </div>
-                <div class="hella-item__body">
-                    <h3>Duis suscipit</h3>
-                    <input type="radio" name="item-for-user" id="item-for-use-1">
-                    <p>Duis in mollis magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </label>
-            <label for="item-for-use-2" class="hella-item js-hella-item-input hella-row__col is-active">
-                <div class="hella-item__heading" style="background-image: url(https://images.unsplash.com/photo-1536746007024-0aaf22d99e66?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9f46f636be60d203eba0b01c5567ef94&auto=format&fit=crop&w=800&q=80)">
-
-                </div>
-                <div class="hella-item__body">
-                    <h3>Aliquam eget ultricies metus</h3>
-                    <input type="radio" name="item-for-user" id="item-for-use-2" checked="">
-                    <p>Fusce lobortis arcu nec nisi pulvinar, ac scelerisque nisl vestibulum.</p>
-                </div>
-            </label>
-            <label for="item-for-use-3" class="hella-item js-hella-item-input hella-row__col">
-                <div class="hella-item__heading" style="background-image: url(https://images.unsplash.com/photo-1536725527136-e5f9631216d1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=8f475686e07b4174520b7f0dce6b4a4b&auto=format&fit=crop&w=800&q=80)">
-
-                </div>
-                <div class="hella-item__body">
-                    <h3>In efficitur lectus</h3>
-                    <input type="radio" name="item-for-user" id="item-for-use-3">
-                    <p>Ut interdum ipsum justo. Donec nec nisl venenatis, pretium justo vel, semper augue.</p>
-                </div>
-            </label>
-        </div>
-
-    </form>
-</div>
 
 <footer class="bg-dark text-light py-3">
     <div class="container">
@@ -571,7 +532,7 @@
                 <p>A simple theme, responsive and beautiful. For useage on your own product. It has a lot of example use cases you can implement on your own website.
 </p>
                 
-    <a href="https://github.com/disjfa/grubby-theme/tree/master/site/index.html" class="btn btn-outline-primary">
+    <a href="https://github.com/disjfa/grubby-theme/tree/master/site/pages/carousel.html" class="btn btn-outline-primary">
         <i class="fab fa-github"></i>
         edit on github
     </a>
