@@ -43,4 +43,4 @@ $(function () {
     $(evt.delegateTarget).siblings().removeClass('is-active');
     $(evt.delegateTarget).addClass('is-active');
   });
-})
+});

@@ -1,0 +1,44 @@
+---
+layout: page
+title: Blog
+permalink: /blog.html
+group: pages
+icon: fa-newspaper
+order: 12
+---
+
+<div class="py-3">
+    <div class="container">
+        <h1>Blog</h1>
+        <p class="lead">
+            Adipisci at, consequatur, corporis dolores eos expedita ipsa ipsam magnam maxime necessitatibus odit porro
+            quasi qui rerum sequi, temporibus totam vero vitae.
+        </p>
+    </div>
+</div>
+
+<div class="container py-3">
+    <div class="tray">
+        {%- for blog in site.data.blog -%}
+            {%- if blog.published -%}
+                <div class="tray-item">
+                    <div class="tray-image" style="background-image: url({{ blog.image }})">
+
+                    </div>
+                    <div class="tray-body">
+                        <h4>{{ blog.title }}</h4>
+                        <small class="text-black-50">
+                            {{ blog.date }}
+                        </small>
+                        <p>
+                            {{ blog.intro | truncate: 80 }}
+                        </p>
+                        <a href="{{ '/blog-item.html' | prepend: site.baseurl }}" class="btn btn-primary">
+                            Read more
+                        </a>
+                    </div>
+                </div>
+            {% endif %}
+        {%- endfor -%}
+    </div>
+</div>

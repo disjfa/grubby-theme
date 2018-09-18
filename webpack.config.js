@@ -4,6 +4,7 @@ Encore
   .setOutputPath('site/build/')
   .setPublicPath('/grubby-theme/build')
   .addEntry('grubby-theme', './js/grubby-theme.js')
+  .addEntry('grubby-admin', './js/grubby-admin.js')
   .setManifestKeyPrefix('build/')
   .enableSassLoader()
   .autoProvidejQuery()

@@ -1,0 +1,61 @@
+---
+layout: default
+title: Blog
+permalink: /admin/blog.html
+group: admin
+icon: fa-newspaper
+order: 12
+---
+
+<div class="bg-dark text-light py-3">
+    <div class="container">
+        <h1>Blog</h1>
+        <p class="lead">
+            Adipisci at, consequatur, corporis dolores eos expedita ipsa ipsam magnam maxime necessitatibus odit porro
+            quasi qui rerum sequi, temporibus totam vero vitae.
+        </p>
+    </div>
+</div>
+
+<div class="container py-3">
+    <div class="d-flex justify-content-between">
+        <button class="btn btn-primary" type="button">
+            <i class="fa fa-plus"></i>
+            Create new blog post
+        </button>
+        <div class="position-relative">
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(78px, 38px, 0px);">
+                <li class="dropdown-item">
+                    <a href="{{ '/blog.html' | prepend: site.baseurl }}">
+                        View on site
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="tray">
+        {%- for blog in site.data.blog -%}
+            <div class="tray-item{% if blog.published == false %} tray-disabled{% endif %}">
+                <div class="tray-image" style="background-image: url({{ blog.image }})">
+
+                </div>
+                <div class="tray-body">
+                    <h4>{{ blog.title }}</h4>
+                    <small class="text-black-50">
+                        {{ blog.date }}
+                    </small>
+                    <p>
+                        {{ blog.intro | truncate: 80 }}
+                    </p>
+                    <a href="#" class="btn btn-primary">
+                        Show item
+                    </a>
+                </div>
+            </div>
+        {%- endfor -%}
+    </div>
+</div>

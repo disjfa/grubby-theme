@@ -29,7 +29,7 @@ icon: fa-paper-plane
                                 <div class="row align-items-center">
                                     <label class="col-md-2 text-nowrap">To:</label>
                                     <div class="col-md-10">
-                                        <input type="text" class="form-control">
+                                        <input type="text" class="form-control" placeholder="Place an email...">
                                     </div>
                                 </div>
                             </div>
@@ -37,11 +37,16 @@ icon: fa-paper-plane
                                 <div class="row align-items-center">
                                     <label class="col-md-2 text-nowrap">Subject:</label>
                                     <div class="col-md-10">
-                                        <input type="text" class="form-control">
+                                        <input type="text" class="form-control" placeholder="What do you want to talk about...">
                                     </div>
                                 </div>
                             </div>
-                            <textarea rows="10" class="form-control"></textarea>
+                            <div class="form-group">
+                                <label>Content:</label>
+                                <div class="editor p-3 border" data-target="#message-content"></div>
+                            </div>
+                            <small>Add some text above and blur the element to fill the textara below</small>
+                            <textarea rows="10" class="form-control" id="message-content" readonly></textarea>
                             <div class="btn-list mt-4 text-right">
                                 <a href="{{ '/inbox/index.html' | prepend: site.baseurl }}" class="btn btn-secondary btn-space">Cancel</a>
                                 <button type="submit" class="btn btn-primary btn-space">Send message</button>
@@ -53,3 +58,5 @@ icon: fa-paper-plane
         </div>
     </div>
 </div>
+
+

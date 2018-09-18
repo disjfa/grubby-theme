@@ -1,11 +1,11 @@
-{% assign sorted_pages = site.pages | sort : "order" %}
-{% for my_page in sorted_pages %}
-    {% if my_page.title %}
-        {% if my_page.group == include.group %}
+{%- assign sorted_pages = site.pages | sort : "order" -%}
+{%- for my_page in sorted_pages -%}
+    {%- if my_page.title -%}
+        {%- if my_page.group == include.group -%}
             <a class="dropdown-item{% if my_page.url == page.url %} active{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">
                 <i class="fa fa-fw {{ my_page.icon }}"></i>
                 {{ my_page.title }}
             </a>
-        {% endif %}
-    {% endif %}
-{% endfor %}
+        {%- endif -%}
+    {%- endif -%}
+{%- endfor -%}

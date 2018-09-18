@@ -1,32 +1,32 @@
-{% assign sorted_pages = site.pages | sort : "order" %}
-{% for my_page in sorted_pages %}
-    {% if my_page.title %}
-        {% if my_page.group == include.group %}
-            {% if my_page.menu %}
-                {% assign my_submenu = false %}
-                {% if page.url contains my_page.url %}
-                    {% assign my_submenu = true %}
-                {% endif %}
-                {% if my_page.menu == page.group %}
-                    {% assign my_submenu = true %}
-                {% endif %}
+{%- assign sorted_pages = site.pages | sort : "order" -%}
+{%- for my_page in sorted_pages -%}
+    {%- if my_page.title -%}
+        {%- if my_page.group == include.group -%}
+            {%- if my_page.menu -%}
+                {%- assign my_submenu = false -%}
+                {%- if page.url contains my_page.url -%}
+                    {%- assign my_submenu = true -%}
+                {%- endif -%}
+                {%- if my_page.menu == page.group -%}
+                    {%- assign my_submenu = true -%}
+                {%- endif -%}
                 <li class="nav-item dropdown{% if my_submenu %} active{% endif %}">
                     <a class="nav-link dropdown-toggle" href="#menu-{{ my_page.menu }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="fa fa-fw {{ my_page.icon }}"></i>
-                        {{ my_page.title }}
+                        {{- my_page.title -}}
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            {% include dropdown-menu.html group=my_page.menu %}
+                        {%- include dropdown-menu.html group=my_page.menu -%}
                     </div>
                 </li>
-            {% else %}
+            {%- else -%}
                 <li class="nav-item{% if my_page.url == page.url %} active{% endif %}">
                     <a class="nav-link" href="{{ my_page.url | prepend: site.baseurl }}">
                         <i class="fa fa-fw {{ my_page.icon }}"></i>
                         {{ my_page.title }}
                     </a>
                 </li>
-            {% endif %}
-        {% endif %}
-    {% endif %}
-{% endfor %}
+            {%- endif -%}
+        {%- endif -%}
+    {%- endif -%}
+{%- endfor -%}

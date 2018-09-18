@@ -1,0 +1,68 @@
+---
+layout: page
+title: Blog item
+permalink: /blog-item.html
+icon: fa-newspaper
+order: 12
+---
+
+{%- for blog in site.data.blog -%}
+    {%- if blog.published -%}
+        <div class="ryoko" style="background-image: url({{ blog.image }})">
+            <div class="ryoko-shade ryoko-body">
+            </div>
+        </div>
+        <div class="container py-3">
+            <h1>{{ blog.title }}</h1>
+            <small class="text-black-50">
+                {{ blog.date }}
+            </small>
+            <p class="lead">
+                {{ blog.intro }}
+            </p>
+            <p>
+                {{ blog.description }}
+            </p>
+            <a href="{{ '/blog.html' | prepend: site.baseurl }}" class="btn btn-outline-primary">
+                <i class="fa fa-chevron-left"></i>
+                Back to list
+            </a>
+        </div>
+        {% break %}
+    {% endif %}
+{%- endfor -%}
+
+<div class="bg-white">
+    <div class="container py-3">
+        <div class="row py-3">
+            <div class="col-md-4 text-center">
+                <div class="fa fa-fw fa-5x fa-box-open"></div>
+                <p>
+                    Accusantium aspernatur atque consectetur consequatur dicta excepturi.
+                </p>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="fa fa-fw fa-5x fa-bicycle"></div>
+                <p>
+                    Doloremque eius eligendi eveniet, expedita fuga harum ipsam iure laboriosam.
+                </p>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="fa fa-fw fa-5x fa-archive"></div>
+                <p>
+                    Atque consequuntur doloribus illo iure natus placeat porro quasi quibusdam.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container py-3">
+    <div class="text-center p-3">
+        <h3>Accusantium at atque autem consectetur eaque.</h3>
+        <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem corporis eos et expedita fugiat!
+            Accusamus accusantium consectetur ducimus, et excepturi fugiat fugit id necessitatibus nulla, officia
+            officiis, sapiente soluta veniam.
+        </p>
+    </div>
+</div>

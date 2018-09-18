@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 {% include head.html %}
+<link rel="stylesheet" href="{{ "/build/grubby-admin.css" | prepend: site.baseurl }}">
 <body>
 <div class="grid">
     <div class="grid-sidebar bg-white">
@@ -82,5 +83,6 @@
     </div>
 </div>
 {% include footer.html %}
+<script src="{{ "/build/grubby-admin.js" | prepend: site.baseurl }}"></script>
 </body>
 </html>
