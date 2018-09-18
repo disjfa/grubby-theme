@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Components</title>
+    <title>Blog</title>
     <meta name="description" content="A simple theme, responsive and beautiful. For useage on your own product. It has a lot of example use cases you can implement on your own website.
 ">
 
@@ -47,7 +47,7 @@
 
     <link rel="stylesheet" href="/grubby-theme/build/grubby-theme.css">
     <link rel="stylesheet" href="/grubby-theme/css/highlight.css">
-    <link rel="canonical" href="https://disjfa.github.io/grubby-theme/components.html">
+    <link rel="canonical" href="https://disjfa.github.io/grubby-theme/admin/blog.html">
     <link rel="alternate" type="application/rss+xml" title="Grubby theme" href="https://disjfa.github.io/grubby-theme/feed.xml">
 </head>
 
@@ -98,13 +98,13 @@
                     </a>
                 </li></ul>
                     </div>
-                </li><li class="sidebar-with-icon nav-item">
-                    <a class="nav-link collapsed" href="#menu-admin" data-toggle="collapse">
+                </li><li class="sidebar-with-icon nav-itemactive">
+                    <a class="nav-link" href="#menu-admin" data-toggle="collapse">
                         <i class="fa fa-fw fa-chevron-left float-right sidebar-icon"></i>
                         <i class="fa fa-fw fa-compass"></i>
                         Admin
                     </a>
-                    <div class="collapse " id="menu-admin" data-parent="#menu-main">
+                    <div class="collapse  show" id="menu-admin" data-parent="#menu-main">
                         <ul class="navbar-nav d-block pl-1 ml-2 border-left"><li class="nav-item">
                     <a class="nav-link" href="/grubby-theme/dashboard.html">
                         <i class="fa fa-fw fa-tachometer-alt"></i>
@@ -120,20 +120,20 @@
                         <i class="fa fa-fw fa-file-import"></i>
                         Sidemenu
                     </a>
-                </li><li class="nav-item">
+                </li><li class="nav-item active">
                     <a class="nav-link" href="/grubby-theme/admin/blog.html">
                         <i class="fa fa-fw fa-newspaper"></i>
                         Blog
                     </a>
                 </li></ul>
                     </div>
-                </li><li class="sidebar-with-icon nav-itemactive">
-                    <a class="nav-link" href="#menu-components" data-toggle="collapse">
+                </li><li class="sidebar-with-icon nav-item">
+                    <a class="nav-link collapsed" href="#menu-components" data-toggle="collapse">
                         <i class="fa fa-fw fa-chevron-left float-right sidebar-icon"></i>
                         <i class="fa fa-fw fa-list-alt"></i>
                         Components
                     </a>
-                    <div class="collapse  show" id="menu-components" data-parent="#menu-main">
+                    <div class="collapse " id="menu-components" data-parent="#menu-main">
                         <ul class="navbar-nav d-block pl-1 ml-2 border-left"><li class="nav-item">
                     <a class="nav-link" href="/grubby-theme/buttons.html">
                         <i class="fa fa-fw fa-square"></i>
@@ -232,95 +232,204 @@
         </nav>
     </div>
     <div class="grid-content">
-        <div class="bg-success">
-    <div class="container py-3 text-white">
-        <h1>Components</h1>
+        <div class="bg-dark text-light py-3">
+    <div class="container">
+        <h1>Blog</h1>
         <p class="lead">
-            Check out some components
+            Adipisci at, consequatur, corporis dolores eos expedita ipsa ipsam magnam maxime necessitatibus odit porro
+            quasi qui rerum sequi, temporibus totam vero vitae.
         </p>
     </div>
 </div>
+
 <div class="container py-3">
-    <div class="row">
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-                <a class="col-lg-3 col-sm-6 col-12" href="/grubby-theme/buttons.html">
-                    <div class="text-center border bg-white py-3 mb-3">
-                        <i class="fa fa-fw fa-5x fa-square"></i>
-                        <h3>Buttons</h3>
-                    </div>
-                </a>
-            
-        
-            
-                <a class="col-lg-3 col-sm-6 col-12" href="/grubby-theme/cards.html">
-                    <div class="text-center border bg-white py-3 mb-3">
-                        <i class="fa fa-fw fa-5x fa-file-image"></i>
-                        <h3>Cards</h3>
-                    </div>
-                </a>
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-                <a class="col-lg-3 col-sm-6 col-12" href="/grubby-theme/forms.html">
-                    <div class="text-center border bg-white py-3 mb-3">
-                        <i class="fa fa-fw fa-5x fa-file-alt"></i>
-                        <h3>Forms</h3>
-                    </div>
-                </a>
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-        
-            
-                <a class="col-lg-3 col-sm-6 col-12" href="/grubby-theme/tables.html">
-                    <div class="text-center border bg-white py-3 mb-3">
-                        <i class="fa fa-fw fa-5x fa-table"></i>
-                        <h3>Tables</h3>
-                    </div>
-                </a>
-            
-        
+    <div class="d-flex justify-content-between">
+        <button class="btn btn-primary" type="button">
+            <i class="fa fa-plus"></i>
+            Create new blog post
+        </button>
+        <div class="position-relative">
+            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" type="button" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(78px, 38px, 0px);">
+                <li class="dropdown-item">
+                    <a href="/grubby-theme/blog.html">
+                        View on site
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
+    <hr>
+    <div class="tray"><div class="tray-item">
+                <div class="tray-image" style="background-image: url(https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c6aff458ede991b57d36fb5d31d04b1f&auto=format&fit=crop&w=1200&h=800&q=80)">
+
+                </div>
+                <div class="tray-body">
+                    <h4>At Last, The Secret To Is Revealed</h4>
+                    <small class="text-black-50">
+                        2.8.2018
+                    </small>
+                    <p>
+                        Proin risus. Praesent lectus. Vestibulum quam sapien, varius ut, blandit non,...
+                    </p>
+                    <a href="#" class="btn btn-primary">
+                        Show item
+                    </a>
+                </div>
+            </div><div class="tray-item">
+                <div class="tray-image" style="background-image: url(https://images.unsplash.com/photo-1527234639945-70d78416bd7d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c6aff458ede991b57d36fb5d31d04b1f&auto=format&fit=crop&w=1200&h=800&q=80)">
+
+                </div>
+                <div class="tray-body">
+                    <h4>The Death Of And How To Avoid It</h4>
+                    <small class="text-black-50">
+                        2.8.2018
+                    </small>
+                    <p>
+                        In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugia...
+                    </p>
+                    <a href="#" class="btn btn-primary">
+                        Show item
+                    </a>
+                </div>
+            </div><div class="tray-item tray-disabled">
+                <div class="tray-image" style="background-image: url(https://images.unsplash.com/photo-1527656855834-0235e41779fd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c6aff458ede991b57d36fb5d31d04b1f&auto=format&fit=crop&w=1200&h=800&q=80)">
+
+                </div>
+                <div class="tray-body">
+                    <h4>Don't Just Sit There! Start</h4>
+                    <small class="text-black-50">
+                        2.8.2018
+                    </small>
+                    <p>
+                        Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridicu...
+                    </p>
+                    <a href="#" class="btn btn-primary">
+                        Show item
+                    </a>
+                </div>
+            </div><div class="tray-item">
+                <div class="tray-image" style="background-image: url(https://images.unsplash.com/photo-1522826953858-d2b7937b377a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c6aff458ede991b57d36fb5d31d04b1f&auto=format&fit=crop&w=1200&h=800&q=80)">
+
+                </div>
+                <div class="tray-body">
+                    <h4>Why Ignoring Will Cost You Time and Sales</h4>
+                    <small class="text-black-50">
+                        2.8.2018
+                    </small>
+                    <p>
+                        Pellentesque ultrices mattis odio. Donec vitae nisi. Nam ultrices, libero non...
+                    </p>
+                    <a href="#" class="btn btn-primary">
+                        Show item
+                    </a>
+                </div>
+            </div><div class="tray-item">
+                <div class="tray-image" style="background-image: url(https://images.unsplash.com/photo-1518117940395-1ac64e773a75?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c6aff458ede991b57d36fb5d31d04b1f&auto=format&fit=crop&w=1200&h=800&q=80)">
+
+                </div>
+                <div class="tray-body">
+                    <h4>Fast-Track Your</h4>
+                    <small class="text-black-50">
+                        2.8.2018
+                    </small>
+                    <p>
+                        Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, se...
+                    </p>
+                    <a href="#" class="btn btn-primary">
+                        Show item
+                    </a>
+                </div>
+            </div><div class="tray-item tray-disabled">
+                <div class="tray-image" style="background-image: url(https://images.unsplash.com/photo-1514517521153-1be72277b32f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c6aff458ede991b57d36fb5d31d04b1f&auto=format&fit=crop&w=1200&h=800&q=80)">
+
+                </div>
+                <div class="tray-body">
+                    <h4>Proof That Really Works</h4>
+                    <small class="text-black-50">
+                        2.8.2018
+                    </small>
+                    <p>
+                        In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidu...
+                    </p>
+                    <a href="#" class="btn btn-primary">
+                        Show item
+                    </a>
+                </div>
+            </div><div class="tray-item">
+                <div class="tray-image" style="background-image: url(https://images.unsplash.com/photo-1505394033641-40c6ad1178d7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c6aff458ede991b57d36fb5d31d04b1f&auto=format&fit=crop&w=1200&h=800&q=80)">
+
+                </div>
+                <div class="tray-body">
+                    <h4>The Anthony Robins Guide To</h4>
+                    <small class="text-black-50">
+                        2.8.2018
+                    </small>
+                    <p>
+                        Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis.
+                    </p>
+                    <a href="#" class="btn btn-primary">
+                        Show item
+                    </a>
+                </div>
+            </div><div class="tray-item">
+                <div class="tray-image" style="background-image: url(https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c6aff458ede991b57d36fb5d31d04b1f&auto=format&fit=crop&w=1200&h=800&q=80)">
+
+                </div>
+                <div class="tray-body">
+                    <h4>Works Only Under These Conditions</h4>
+                    <small class="text-black-50">
+                        2.8.2018
+                    </small>
+                    <p>
+                        Nulla mollis molestie lorem. Quisque ut erat.
+                    </p>
+                    <a href="#" class="btn btn-primary">
+                        Show item
+                    </a>
+                </div>
+            </div><div class="tray-item">
+                <div class="tray-image" style="background-image: url(https://images.unsplash.com/photo-1496449903678-68ddcb189a24?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c6aff458ede991b57d36fb5d31d04b1f&auto=format&fit=crop&w=1200&h=800&q=80)">
+
+                </div>
+                <div class="tray-body">
+                    <h4>5 Things To Do Immediately About</h4>
+                    <small class="text-black-50">
+                        2.8.2018
+                    </small>
+                    <p>
+                        Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pell...
+                    </p>
+                    <a href="#" class="btn btn-primary">
+                        Show item
+                    </a>
+                </div>
+            </div><div class="tray-item">
+                <div class="tray-image" style="background-image: url(https://images.unsplash.com/photo-1491897554428-130a60dd4757?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c6aff458ede991b57d36fb5d31d04b1f&auto=format&fit=crop&w=1200&h=800&q=80)">
+
+                </div>
+                <div class="tray-body">
+                    <h4>Why Most Fail</h4>
+                    <small class="text-black-50">
+                        2.8.2018
+                    </small>
+                    <p>
+                        Nulla nisl.
+                    </p>
+                    <a href="#" class="btn btn-primary">
+                        Show item
+                    </a>
+                </div>
+            </div></div>
 </div>
 
     </div>
     <div class="grid-footer bg-white">
         <div class="py-2 px-2">
             
-    <a href="https://github.com/disjfa/grubby-theme/tree/master/site/pages/components.html" class="btn btn-outline-primary">
+    <a href="https://github.com/disjfa/grubby-theme/tree/master/site/pages/blog/admin.html" class="btn btn-outline-primary">
         <i class="fab fa-github"></i>
         edit on github
     </a>
