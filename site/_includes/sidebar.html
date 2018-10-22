@@ -4,7 +4,9 @@
             {% include menu.html group='main' %}
         </ul>
     </div>
-    <a class="navbar-brand d-inline d-md-none" href="{{ '/' | prepend: site.baseurl }}">{{ site.title }}</a>
+    <a class="navbar-brand d-inline d-md-none" href="{{ '/dashboard.html' | prepend: site.baseurl }}">
+        <img src="{{ '/icons/android-chrome-36x36.png' | prepend: site.baseurl }}" alt="{{ site.title }}">
+    </a>
     <button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#sidebar-navigation" aria-controls="sidebar-navigation" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>

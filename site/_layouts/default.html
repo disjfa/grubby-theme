@@ -4,11 +4,10 @@
 <link rel="stylesheet" href="{{ "/build/grubby-admin.css" | prepend: site.baseurl }}">
 <body>
 <div class="grid">
-    <div class="grid-sidebar bg-white">
+    <div class="grid-sidebar bg-light">
         <nav class="navbar navbar-light d-none d-md-block border-bottom">
             <div class="navbar-brand px-2">
-                <i class="fa fa-bars"></i>
-                Menu
+                {{ site.title }}
             </div>
         </nav>
         {% include sidebar.html %}
@@ -16,8 +15,7 @@
     <div class="grid-header">
         <nav class="navbar navbar-light bg-white border-bottom">
             <a class="navbar-brand d-none d-md-block" href="{{ '/' | prepend: site.baseurl }}">
-                <i class="fa fa-compass"></i>
-                {{ site.title }}
+                <img src="{{ '/icons/android-chrome-36x36.png' | prepend: site.baseurl }}" alt="{{ site.title }}" style="max-height: 24px;">
             </a>
             <div></div>
             <div class="d-flex">
